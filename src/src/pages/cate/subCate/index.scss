@@ -1,0 +1,102 @@
+
+.cate {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30rpx 14rpx 14rpx;
+  .banner {
+    display: block;
+    width: 528rpx;
+    height: 192rpx;
+    margin-bottom: 36rpx;
+  }
+}
+
+.group {
+  width: 100%;
+  display: block;
+  margin-bottom: 12rpx;
+  .title {
+    font-size: 30rpx;
+    color: #232323;
+    font-weight: 700;
+    padding: 0 0 0 10rpx;
+  }
+  .listWrapper {
+    padding: 20rpx 0 60rpx;
+    margin-bottom: 30rpx;
+    .categories-group{
+        padding: 20rpx 0 60rpx;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 60rpx;
+        font-size:28rpx;
+        &:before {
+          content: "";
+          height: 2rpx;
+          background-color: #ddd;
+          display: block;
+          bottom: 0;
+          position: absolute;
+          left: 8rpx;
+          right: 8rpx;
+        }
+        .categories-item{
+            flex: 1;
+            padding: 14rpx 6rpx 0 8rpx;
+          .categories-name{
+              box-sizing:border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 256rpx;
+              height:110rpx;
+              padding: 0 20rpx;
+              background: #f6f6f6;
+              color:#575859;
+          }
+        }
+    }
+  }
+}
+.all-sports-list {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+
+      .item {
+          height: 268rpx;
+          text-align: center;
+          background-color: #fff;
+          position: relative;
+          width: 33.33%;
+          overflow: hidden;
+        .img {
+          box-sizing: border-box;
+          width: 180rpx;
+          height: 180rpx;
+          padding: 16rpx;
+          margin: 0 auto;
+        }
+
+        .name {
+          box-sizing: border-box;
+          font-size: 28rpx;
+          height: 88rpx;
+          color: #5f5f5f;
+          margin: 0;
+          position: relative;
+          line-height: 32rpx;
+          overflow: hidden;
+          padding-top: 14rpx;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          
+        }
+      }
+    }
